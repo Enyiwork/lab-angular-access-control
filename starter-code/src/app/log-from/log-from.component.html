@@ -1,0 +1,15 @@
+<h2>Log Form</h2>
+
+<form (ngSubmit)="logSubmit()">
+   <label for="input-person">Person</label>
+   <input id="input-person" type="text" placeholder="add person..."
+  [(ngModel)]="message.person" name="person" />
+   <br />
+
+   <label for="input-message"> Message </label>
+   <input id="input-message" type="text" placeholder="Add name..."
+     [(ngModel)]="message.name" name="message"/>
+   <br />
+
+   <button>Submit this Log</button>
+</form>
